@@ -52,10 +52,10 @@
 }
 .contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 490px;
-  width: 50%;
+  width: 55%;
   flex-wrap: wrap;
   &-num {
     letter-spacing: 0.06em;
@@ -68,5 +68,6 @@
     text-align: center;
     padding: 0.4em 2em;
     font-weight: bold;
+    margin-top: 0.5em;
   }
 }

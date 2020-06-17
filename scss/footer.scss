@@ -1,0 +1,35 @@
+.footer {
+  background: #13547a;
+  padding: 50px 0;
+  color: #fff;
+  &-menu {
+    max-width: 320px;
+    width: 90%;
+    padding-left: 1em;
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-right {
+    width: 30%;
+  }
+  &-left {
+    width: 66%;
+    &-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &-logo {
+    width: 320px;
+  }
+  &-copy {
+    margin-top: 1em;
+  }
+  &-conf {
+    margin-bottom: 2em;
+  }
+}
