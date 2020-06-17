@@ -2,7 +2,7 @@
   background-image: url(../img/head-img.png), url(../img/head-bg.svg),
     linear-gradient(111.52deg, #2df7c6 4.33%, #13547a 92.47%);
   background-repeat: no-repeat;
-  background-position: 83% 58%, right center, center;
+  background-position: right 180px top 58%, right center, center;
 
   font-size: 1.25rem;
   color: #ffffff;
@@ -69,5 +69,40 @@
     padding: 0.4em 2em;
     font-weight: bold;
     margin-top: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    background-position: 810px 58%, 780px center, center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 560px;
+    background-image: url(../img/head-img.png), url(../img/head-bg-small.svg),
+      linear-gradient(111.52deg, #2df7c6 4.33%, #13547a 92.47%);
+    background-repeat: no-repeat;
+    background-position: right 10px top 45%, right center, center;
+    background-size: 242px, auto, auto;
+  }
+  .header-text {
+    margin-top: 175px;
+  }
+  .header-top {
+    display: none;
+  }
+  .header-content {
+    padding-top: 45px;
+  }
+  .logo {
+    height: 6rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header-text {
+    margin-top: 250px;
   }
 }
