@@ -30,18 +30,24 @@
     display: none;
     position: absolute;
   }
+  &-menu {
+    width: 50%;
+    max-width: 360px;
+  }
 }
+
 .menu {
   display: flex;
-  max-width: 360px;
+
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+
   text-transform: uppercase;
   letter-spacing: 0.06em;
   &-item {
     padding-bottom: 1px;
     border-bottom: 1px solid;
+    margin: 0.5em 0;
   }
 }
 .contact {
