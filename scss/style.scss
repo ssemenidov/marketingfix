@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+button {
+  border: none;
+  color: inherit;
+  background: none;
+}
+:focus {
+  outline: none;
+}
+li,
+ul {
+  list-style: none;
+}
+.container {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 1440px;
+}
+html {
+  font-size: 20px;
+}
+@import "header";
+@import "feature";
+
+.target {
+  background: #13547a;
+}
