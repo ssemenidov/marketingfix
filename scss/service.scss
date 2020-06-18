@@ -63,7 +63,8 @@
     border-radius: 10px;
     color: #fff;
     margin-top: 1em;
-    margin-left: 1em;
+    margin-left: 1rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -86,7 +87,7 @@
     background-size: 80%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 580px) {
   .service {
     margin: 2.5em 0;
   }
@@ -96,10 +97,14 @@
     width: 100%;
   }
   .service-content {
-    width: 85%;
-    margin-left: 0;
+    width: 93%;
+    max-width: 350px;
+    margin-left: 7%;
   }
   .service-item {
     flex-direction: column;
+  }
+  .service-btn {
+    font-size: 20px;
   }
 }
