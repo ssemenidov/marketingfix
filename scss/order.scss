@@ -41,7 +41,18 @@
     right: 0;
   }
 }
+.order-green::after {
+  content: "";
+  background: url(../img/order-green-head.svg);
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  background-size: contain;
+}
 .order-green {
+  position: relative;
   color: #fff;
   background: url(../img/order-green-img.png),
     linear-gradient(117.73deg, #2df7c6 4.33%, #13547a 92.47%);
