@@ -33,7 +33,7 @@
       text-align: center;
       border: 2px solid #37ecba;
     }
-    &-item-active {
+    &-item--active {
       background: linear-gradient(140.46deg, #37ecba 26.47%, #72afd3 106.99%);
     }
     &-item:active {
@@ -64,5 +64,16 @@
   }
   .target {
     padding: 2.5em 0;
+  }
+  .target-menu {
+    justify-content: center;
+  }
+  .target-menu-item {
+    display: none;
+    width: 80%;
+    border: none;
+  }
+  .target-menu-item--active {
+    display: flex;
   }
 }
