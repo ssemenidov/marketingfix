@@ -1,6 +1,6 @@
 .feature {
   color: #13547a;
-  padding: 80px 0;
+  padding: 4em 0;
   &-title {
     font-size: 1.75rem;
     font-weight: 800;
@@ -40,7 +40,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .service-item {
-    flex-direction: column;
+  .feature {
+    padding: 2.5em 0;
   }
 }

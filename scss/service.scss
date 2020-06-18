@@ -1,5 +1,5 @@
 .service {
-  padding-top: 80px;
+  margin-top: 4em;
   color: #13547a;
   &-title {
     font-weight: 800;
@@ -12,10 +12,8 @@
     justify-content: space-between;
     align-items: center;
     &-title {
-      min-height: 55px;
-      line-height: 55px;
+      margin-bottom: 1em;
       padding-left: 1em;
-      margin-bottom: 0.5em;
       position: relative;
     }
     &-title span {
@@ -26,13 +24,14 @@
       content: "";
       background-repeat: no-repeat;
       background: url(../img/li.svg);
-      background-size: 3.5em 3em;
+      background-size: 3.51em 3em;
       height: 3em;
       width: 3.5em;
       -o-object-fit: contain;
       /* object-fit: contain; */
       position: absolute;
       left: -3.5em;
+      top: -0.5em;
     }
     &-text {
       border-left: 1px solid #2df7e0;
@@ -69,20 +68,27 @@
 }
 
 .service-theme {
-  background: url(../img/service-theme.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 1070px;
-  margin-top: 2.6em;
+  // background: url(../img/service-theme.png);
+  // background-repeat: no-repeat;
+  // background-position: 0 0;
+  // background-size: 1070px;
+  // margin-top: 2.6em;
   &-title {
-    margin: 2.5em 0;
-
+    //margin: 2.5em 0;
+    background: linear-gradient(140.46deg, #37ecba 26.47%, #72afd3 106.99%);
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
     color: #fff;
   }
 }
 @media screen and (max-width: 1024px) {
   .service-theme {
     background-size: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service {
+    margin: 2.5em 0;
   }
   .service-img {
     order: 0 !important;
@@ -92,5 +98,8 @@
   .service-content {
     width: 85%;
     margin-left: 0;
+  }
+  .service-item {
+    flex-direction: column;
   }
 }
