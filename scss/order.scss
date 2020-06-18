@@ -41,16 +41,16 @@
     right: 0;
   }
 }
-.order-green::after {
-  content: "";
-  background: url(../img/order-green-head.svg);
-  background-repeat: no-repeat;
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  top: -10%;
-  background-size: contain;
-}
+// .order-green::after {
+//   content: "";
+//   background: url(../img/order-green-head.svg);
+//   background-repeat: no-repeat;
+//   height: 100px;
+//   width: 100%;
+//   position: absolute;
+//   top: -10%;
+//   background-size: contain;
+// }
 .order-green {
   position: relative;
   color: #fff;
