@@ -72,15 +72,18 @@ for (navlink of navList) {
 }
 callList = document.querySelectorAll(".contact-btn");
 form = document.querySelector(".form");
-formcloseList = document.querySelectorAll(".form-close");
+formclose = document.querySelector(".form-close");
+formsubmit = document.querySelector(".form-submit");
 for (let call of callList) {
   call.addEventListener("click", () => {
     form.classList.toggle("form--active");
   });
 }
 
-for (let formclose of formcloseList) {
-  formclose.addEventListener("click", () => {
-    form.classList.toggle("form--active");
-  });
-}
+formclose.addEventListener("click", () => {
+  form.classList.toggle("form--active");
+});
+
+formsubmit.addEventListener("click", () => {
+  form.classList.toggle("form--active");
+});
