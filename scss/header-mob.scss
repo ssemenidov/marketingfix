@@ -4,7 +4,7 @@
   pointer-events: none;
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   background: #fff;
   color: #2df7c6;
@@ -56,6 +56,7 @@
   content: url(../img/close.png);
   opacity: 1;
   background: linear-gradient(97.67deg, #37ecba 26.47%, #72afd3 106.99%);
+  position: fixed;
 }
 .mob-logo {
   width: 200px;
