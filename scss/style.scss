@@ -116,7 +116,8 @@ html {
     padding-left: 1em;
     border-left: 1px solid #2df7e0;
     margin-bottom: 1.5em;
-    transition: opacity 0.5s ease-in-out forwards;
+    transition: opacity 0.5s ease-in-out;
+    height: 15em;
 
     span {
       font-weight: 800;

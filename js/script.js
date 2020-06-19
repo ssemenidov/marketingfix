@@ -1,5 +1,6 @@
 //work
 workbtnList = document.querySelectorAll(".bar-point-btn");
+workList = document.querySelectorAll(".work-text");
 worknext = document.querySelector(".work-next");
 workprev = document.querySelector(".work-prev");
 workActive = 0;
@@ -7,8 +8,11 @@ workActive = 0;
 //work-point
 function updateworkpoint(active) {
   workbtnList[workActive].classList.remove("bar-point-btn--active");
+  workList[workActive].classList.add("hidden");
+
   workActive = active;
   workbtnList[workActive].classList.add("bar-point-btn--active");
+  workList[workActive].classList.remove("hidden");
 }
 for (let i = 0; i < workbtnList.length; i++) {
   workbtnList[i].addEventListener("click", () => {
