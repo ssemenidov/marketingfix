@@ -57,3 +57,11 @@ $(document).ready(function () {
     infinite: false,
   });
 });
+
+burger = document.querySelector(".burg");
+header = document.querySelector(".header-mob");
+burger.addEventListener("click", () => {
+  console.log("active");
+
+  header.classList.toggle("header-mob--active");
+});

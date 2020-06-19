@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  height: 50vh;
   background-image: url(../img/head-img.png), url(../img/head-bg.svg),
     linear-gradient(111.52deg, #2df7c6 4.33%, #13547a 92.47%);
   background-repeat: no-repeat;
@@ -69,6 +71,7 @@
     padding: 0.4em 2em;
     font-weight: bold;
     margin-top: 0.5em;
+    color: #fff !important;
   }
 }
 
@@ -93,11 +96,22 @@
   .header-top {
     display: none;
   }
+  .header-menu {
+    flex-direction: column;
+  }
   .header-content {
     padding-top: 45px;
   }
   .logo {
     height: 6rem;
+  }
+  .menu-item {
+    margin: 15px 0;
+    font-size: 20px;
+  }
+  .contact-btn {
+    padding: 0.7em 2.5em;
+    margin-top: 10px;
   }
 }
 
