@@ -6,9 +6,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2.5em 0;
-  // &-slider {
-  //   display: none;
-  // }
+
   &-title {
     font-size: 1.75rem;
     font-weight: 800;
@@ -68,6 +66,13 @@
     left: 5%;
     top: 35%;
     z-index: 1;
+  }
+}
+@media screen and (min-width: 769px) {
+  .target-slider,
+  .target-next,
+  .target-prev {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
