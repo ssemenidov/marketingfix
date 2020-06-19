@@ -68,9 +68,12 @@ burger.addEventListener("click", () => {
 for (navlink of navList) {
   navlink.addEventListener("click", () => {
     header.classList.remove("header-mob--active");
+    burger.classList.remove("burg--active");
   });
 }
 callList = document.querySelectorAll(".contact-btn");
+servicecallList = document.querySelectorAll(".service-btn");
+ordercallList = document.querySelectorAll(".order-btn");
 form = document.querySelector(".form");
 formclose = document.querySelector(".form-close");
 formsubmit = document.querySelector(".form-submit");
@@ -79,7 +82,17 @@ for (let call of callList) {
     form.classList.toggle("form--active");
   });
 }
+for (let ordercall of ordercallList) {
+  ordercall.addEventListener("click", () => {
+    form.classList.toggle("form--active");
+  });
+}
 
+for (let servicecall of servicecallList) {
+  servicecall.addEventListener("click", () => {
+    form.classList.toggle("form--active");
+  });
+}
 formclose.addEventListener("click", () => {
   form.classList.toggle("form--active");
 });

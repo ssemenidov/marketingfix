@@ -149,8 +149,9 @@
     display: none;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .work-text {
     margin-top: 200px;
+    height: 25em;
   }
 }
