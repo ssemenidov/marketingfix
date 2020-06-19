@@ -75,6 +75,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 1024px) {
+  .target-menu img {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .target-menu,
   .target-list {
@@ -94,6 +99,7 @@
     padding: 0.7em 0;
     margin-bottom: 1em;
   }
+
   .target-text {
     text-align: center;
     border: none;
