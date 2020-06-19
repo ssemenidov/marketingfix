@@ -70,9 +70,7 @@
     align-items: center;
     justify-content: center;
   }
-  &-arrow {
-    height: 1.5em;
-  }
+
   &-rocket {
     object-fit: contain;
     width: 100%;
@@ -85,29 +83,29 @@
     align-items: center;
     position: relative;
   }
-  &-point::after {
-    content: "";
-    background-color: #fff;
-    background-size: 10vw;
-    position: absolute;
-    top: 46%;
-    left: 100%;
-    width: 10vh;
-    height: 1px;
-  }
-  &-point::before {
-    content: "";
-    background-color: #fff;
-    background-size: 10vw;
-    position: absolute;
-    top: 46%;
-    left: -60%;
-    width: 10vh;
-    height: 1px;
-  }
-  &-point:nth-of-type(1)::before {
-    display: none;
-  }
+  // &-point::after {
+  //   content: "";
+  //   background-color: #fff;
+  //   background-size: 10vw;
+  //   position: absolute;
+  //   top: 46%;
+  //   left: 100%;
+  //   width: 10vh;
+  //   height: 1px;
+  // }
+  // &-point::before {
+  //   content: "";
+  //   background-color: #fff;
+  //   background-size: 10vw;
+  //   position: absolute;
+  //   top: 46%;
+  //   left: -60%;
+  //   width: 10vh;
+  //   height: 1px;
+  // }
+  // &-point:nth-of-type(1)::before {
+  //   display: none;
+  // }
   &-point-btn {
     font-weight: bold;
     font-size: 25px;
@@ -183,10 +181,10 @@
   .bar-point-text {
     display: none;
   }
-  .bar-point::before,
-  .bar-point::after {
-    display: none;
-  }
+  // .bar-point::before,
+  // .bar-point::after {
+  //   display: none;
+  // }
 }
 @media screen and (max-width: 600px) {
   .work-text {
