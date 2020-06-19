@@ -60,8 +60,12 @@ $(document).ready(function () {
 
 burger = document.querySelector(".burg");
 header = document.querySelector(".header-mob");
+navList = document.querySelectorAll(".header-mob .menu-item");
 burger.addEventListener("click", () => {
-  console.log("active");
-
   header.classList.toggle("header-mob--active");
 });
+for (navlink of navList) {
+  navlink.addEventListener("click", () => {
+    header.classList.remove("header-mob--active");
+  });
+}
