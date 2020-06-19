@@ -153,7 +153,7 @@
 @media screen and (max-width: 768px) {
   .work {
     background-position: 40% 20%, left 20%, center;
-    background-size: 30%, 60%, 100%;
+    background-size: 27%, 50%, 100%;
   }
   .work-wrap {
     flex-direction: row;
@@ -192,5 +192,11 @@
   .work-text {
     margin-top: 200px;
     height: 25em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .work {
+    background-size: 40%, 70%, 100%;
   }
 }
