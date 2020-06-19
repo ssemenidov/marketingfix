@@ -55,6 +55,8 @@ for (let i = 0; i < targetbtnList.length; i++) {
 $(document).ready(function () {
   $(".target-slider").slick({
     infinite: false,
+    nextArrow: ".target-next",
+    prevArrow: ".target-prev",
   });
 });
 
