@@ -31,3 +31,27 @@ workprev.addEventListener("click", () => {
     updateworkpoint(workActive - 1);
   }
 });
+
+targetbtnList = document.querySelectorAll(".target-menu-item");
+targetList = document.querySelectorAll(".target-item");
+//targetnext = document.querySelector(".target-next");
+//targetprev = document.querySelector(".target-prev");
+targetActive = 0;
+
+//work-point
+function updatetargetpoint(active) {
+  targetbtnList[targetActive].classList.remove("target-menu-item--active");
+  targetList[targetActive].classList.add("hidden");
+
+  targetActive = active;
+  targetbtnList[targetActive].classList.add("target-menu-item--active");
+  targetList[targetActive].classList.remove("hidden");
+}
+for (let i = 0; i < targetbtnList.length; i++) {
+  targetbtnList[i].addEventListener("click", () => {
+    updatetargetpoint(i);
+  });
+}
+$(document).ready(function () {
+  $(".target-slider").slick();
+});
