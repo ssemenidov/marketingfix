@@ -53,5 +53,7 @@ for (let i = 0; i < targetbtnList.length; i++) {
   });
 }
 $(document).ready(function () {
-  $(".target-slider").slick();
+  $(".target-slider").slick({
+    infinite: false,
+  });
 });
