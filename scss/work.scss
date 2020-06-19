@@ -42,6 +42,9 @@
     margin-bottom: 1.5em;
     transition: opacity 0.5s ease-in-out;
     height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     span {
       font-weight: 800;
@@ -61,8 +64,8 @@
     border-radius: 10px;
     border: 2px solid #2df7e0;
     align-items: center;
-    height: 2.7em;
-    width: 2.7em;
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
