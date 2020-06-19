@@ -75,68 +75,104 @@ html {
 @import "order";
 @import "case";
 @import "work";
-.header-mob {
-  font-size: 20px;
-  z-index: 1;
+@import "header-mob";
+.form {
   pointer-events: none;
-  height: 635px;
-  width: 100%;
   position: absolute;
-  overflow: hidden;
-  background: #fff;
-  color: #2df7c6;
-  //display: none;
-  transition: all 0.5s;
   opacity: 0;
-  &-wrap {
-    position: relative;
-    height: 635px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  transition: all 0.5s;
+
+  color: #fff;
+  background: rgba($color: #000000, $alpha: 0.5);
+  z-index: 15;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-img {
+    position: absolute;
+    z-index: 2;
+  }
+  &-close {
+    position: absolute;
+    right: 0;
+    top: -20px;
   }
   &-content {
     position: relative;
-    height: 300px;
-    align-items: center;
+    z-index: 5;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    max-width: 400px;
+    max-height: 430px;
+    width: 80%;
+    height: 100vh;
+    display: flex;
   }
-}
-.header-mob--active {
-  opacity: 1;
-  pointer-events: painted;
-}
-.burg {
-  pointer-events: all !important;
-  position: absolute;
-  right: 0;
-  top: 40px;
-  z-index: 10;
-  color: #2df7c6;
-  display: none;
-  background: #fff;
-  width: 54px;
-  height: 54px;
-  flex-direction: column;
-  font-size: 10px;
-  align-items: center;
-  justify-content: flex-end;
   &-text {
-    padding-top: 4px;
-    padding-bottom: 5px;
+    font-size: 1rem;
+    line-height: 1.5em;
+    width: 80%;
+  }
+  &-img {
+    position: absolute;
+    z-index: -1;
+    left: -80px;
+  }
+  &-title {
+    font-weight: 800;
+    font-size: 1.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  &-sub-input {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  ::placeholder {
+    color: #fff;
+  }
+  &-input {
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5em;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  &-submit {
+    background: #fff;
+    color: #2df7c6;
+    font-size: 1.25rem;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 10px;
   }
 }
-.mob-logo {
-  width: 200px;
-  justify-self: start;
-  position: absolute;
-  top: 20px;
-  left: 5px;
+
+.form--active {
+  pointer-events: painted;
+  opacity: 1;
 }
 @media screen and (max-width: 768px) {
-  .burg {
-    display: flex;
+  .form-img {
+    display: none;
+  }
+  .form-content {
+    height: 100vh;
+    align-items: center;
+  }
+  .form-content * {
+    text-align: center;
+  }
+  .form {
+    background: linear-gradient(97.67deg, #37ecba 26.47%, #72afd3 106.99%);
+    height: 100vh;
   }
 }

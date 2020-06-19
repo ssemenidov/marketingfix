@@ -63,9 +63,24 @@ header = document.querySelector(".header-mob");
 navList = document.querySelectorAll(".header-mob .menu-item");
 burger.addEventListener("click", () => {
   header.classList.toggle("header-mob--active");
+  burger.classList.toggle("burg--active");
 });
 for (navlink of navList) {
   navlink.addEventListener("click", () => {
     header.classList.remove("header-mob--active");
+  });
+}
+callList = document.querySelectorAll(".contact-btn");
+form = document.querySelector(".form");
+formcloseList = document.querySelectorAll(".form-close");
+for (let call of callList) {
+  call.addEventListener("click", () => {
+    form.classList.toggle("form--active");
+  });
+}
+
+for (let formclose of formcloseList) {
+  formclose.addEventListener("click", () => {
+    form.classList.toggle("form--active");
   });
 }
