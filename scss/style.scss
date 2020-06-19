@@ -60,6 +60,12 @@ html {
     width: 85%;
   }
 }
+.hidden {
+  opacity: 0 !important;
+  display: none !important;
+  transition: opacity 0.5s ease-in-out forwards;
+}
+
 @import "header";
 @import "feature";
 
@@ -106,10 +112,11 @@ html {
   &-text {
     line-height: 2em;
     max-width: 620px;
-
+    opacity: 1;
     padding-left: 1em;
     border-left: 1px solid #2df7e0;
     margin-bottom: 1.5em;
+    transition: opacity 0.5s ease-in-out forwards;
 
     span {
       font-weight: 800;
@@ -156,6 +163,16 @@ html {
     border-radius: 100%;
     padding: 0.5em 0.8em;
     border: 2px solid #fff;
+    transition: all 0.5s;
+  }
+  &-point-btn--active {
+    font-weight: bold;
+    font-size: 25px;
+    background: #13547a;
+    border-radius: 100%;
+    padding: 0.5em 0.8em;
+    border: none;
+    border: 2px solid #13547a;
   }
   &-point-text {
     position: absolute;
