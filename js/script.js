@@ -75,33 +75,36 @@ burger.addEventListener("click", () => {
   header.classList.toggle("header-mob--active");
   burger.classList.toggle("burg--active");
   form.classList.remove("form--active");
+  form.classList.remove("form--active-menu");
 });
 for (navlink of navList) {
   navlink.addEventListener("click", () => {
     header.classList.remove("header-mob--active");
     burger.classList.remove("burg--active");
     form.classList.remove("form--active");
+    form.classList.remove("form--active-menu");
   });
 }
 
 for (let call of callList) {
   call.addEventListener("click", () => {
-    form.classList.toggle("form--active");
+    form.classList.add("form--active");
+    form.classList.add("form--active-menu");
   });
 }
 for (let ordercall of ordercallList) {
   ordercall.addEventListener("click", () => {
-    form.classList.toggle("form--active");
+    form.classList.add("form--active");
   });
 }
 
 for (let servicecall of servicecallList) {
   servicecall.addEventListener("click", () => {
-    form.classList.toggle("form--active");
+    form.classList.add("form--active");
   });
 }
 formclose.addEventListener("click", () => {
-  form.classList.toggle("form--active");
+  form.classList.remove("form--active");
 });
 
 formsubmit.addEventListener("click", () => {

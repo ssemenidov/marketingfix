@@ -107,8 +107,7 @@
   }
   .form {
     background: linear-gradient(97.67deg, #37ecba 26.47%, #72afd3 106.99%);
-    height: 90vh;
-    margin-top: 100px;
+    height: 100vh;
   }
   .form-submit {
     padding: 0.7em 0.5em;
@@ -122,5 +121,9 @@
   }
   .form-title {
     font-size: 2.1rem;
+  }
+  .form--active-menu {
+    height: 90vh;
+    margin-top: 100px;
   }
 }
