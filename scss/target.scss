@@ -72,7 +72,7 @@
   .target-slider,
   .target-next,
   .target-prev {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 1024px) {
