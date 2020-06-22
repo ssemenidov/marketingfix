@@ -62,8 +62,8 @@
     display: flex;
   }
   &-prev {
-    position: relative;
     border-radius: 10px;
+    border: 2px solid #2df7e0;
     align-items: center;
     height: 50px;
     width: 50px;
@@ -170,15 +170,7 @@
     width: 90%;
     margin-top: 250px;
   }
-  .work-next {
-    display: none;
-  }
-  .work-prev::after {
-    content: url(../img/next-btn.svg);
-    left: 140%;
-    top: -1px;
-    position: absolute;
-  }
+
   .work-rocket {
     width: 70px;
   }
