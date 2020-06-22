@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    padding: 0 2em;
+    padding: 0 3em;
     color: #fff;
     text-align: center;
     transition: opacity 1s;
@@ -76,7 +76,9 @@
     color: #fff;
     background: #2f80ed;
     border-radius: 10px;
-    width: max-content;
+    max-width: 600px;
+    width: 80%;
+    text-align: center;
     padding: 0.5em 1.5em;
   }
 }
@@ -86,5 +88,14 @@
   }
   .case-item-hidden span {
     display: none;
+  }
+  .case-title {
+    font-size: 2.1rem;
+  }
+  .case-hidden-text {
+    max-width: 200px;
+  }
+  .case-hidden-btn {
+    padding: 0.7em 1.5em;
   }
 }

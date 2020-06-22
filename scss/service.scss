@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2em;
     &-title {
       margin-bottom: 1em;
       padding-left: 1em;
@@ -36,6 +37,8 @@
       border-left: 1px solid #2df7e0;
       padding-left: 1em;
       max-width: 475px;
+
+      line-height: 1.5em;
     }
   }
 
@@ -52,7 +55,6 @@
     flex-direction: column;
     justify-content: center;
     width: 51%;
-    padding: 2em 0;
     margin-left: 50px;
   }
   &-btn {
@@ -103,11 +105,19 @@
     width: 93%;
     max-width: 350px;
     margin-left: 7%;
+    padding: 1em 0;
   }
   .service-item {
     flex-direction: column;
   }
   .service-btn {
     font-size: 20px;
+    padding: 0.7em 1.5em;
+  }
+  .service-title {
+    font-size: 2.1rem;
+  }
+  .service-theme-title {
+    padding: 1em 0.5em;
   }
 }

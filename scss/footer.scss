@@ -15,6 +15,9 @@
   }
   &-right {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &-left {
     width: 66%;
@@ -33,6 +36,8 @@
   }
   &-conf {
     margin-bottom: 2em;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #fff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -59,5 +64,9 @@
   .footer-menu {
     flex-direction: column;
     font-size: 1.75rem;
+    padding-left: 0;
+  }
+  .footer-copy {
+    margin-bottom: 1.5em;
   }
 }

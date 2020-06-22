@@ -21,9 +21,10 @@
   }
   &-title {
     padding-bottom: 2em;
+    font-size: 1.5rem;
   }
   &-text {
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin-top: 1.25em;
     font-weight: bold;
     max-width: 12em;
@@ -115,8 +116,11 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .header-text {
     margin-top: 250px;
+  }
+  .header-title {
+    font-size: 1.25rem;
   }
 }

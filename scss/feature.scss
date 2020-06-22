@@ -5,6 +5,7 @@
     font-size: 1.75rem;
     font-weight: 800;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 
   &-item {
@@ -14,9 +15,10 @@
     &-title {
       font-weight: bold;
       font-size: 1.25rem;
+
       display: flex;
       align-items: center;
-      padding-left: 20px;
+      padding-left: 1rem;
       margin-bottom: 1em;
       position: relative;
     }
@@ -35,12 +37,15 @@
     &-text {
       line-height: 1.5em;
       border-left: 1px solid #2df7e0;
-      padding-left: 20px;
+      padding-left: 1rem;
     }
   }
 }
 @media screen and (max-width: 768px) {
   .feature {
     padding: 2.5em 0;
+  }
+  .feature-title {
+    font-size: 2.2rem;
   }
 }
