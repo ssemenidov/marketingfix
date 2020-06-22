@@ -11,6 +11,10 @@
   //display: none;
   transition: all 0.5s;
   opacity: 0;
+  &-top {
+    height: 50px;
+    width: 100%;
+  }
   &-wrap {
     position: relative;
     height: 100vh;
@@ -61,9 +65,7 @@
 .mob-logo {
   width: 200px;
   justify-self: start;
-  position: absolute;
-  top: 20px;
-  left: 5px;
+  padding-top: 20px;
 }
 @media screen and (max-width: 768px) {
   .burg {

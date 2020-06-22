@@ -2,6 +2,11 @@
   position: relative;
   z-index: 1;
   padding: 4em 0;
+  &-head {
+    position: absolute;
+    bottom: 99%;
+    width: 100%;
+  }
   &-title {
     max-width: 950px;
     font-weight: 800;
