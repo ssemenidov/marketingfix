@@ -92,7 +92,7 @@
     top: 46%;
     left: 100%;
     width: 4vw;
-    height: 1px;
+    height: 2px;
     max-width: 100px;
   }
   &-point::before {
@@ -104,7 +104,7 @@
     left: -4vw;
     width: 4vw;
     max-width: 100px;
-    height: 1px;
+    height: 2px;
   }
   &-point:nth-of-type(1)::before {
     display: none;
@@ -182,7 +182,17 @@
   }
   .bar-point::before,
   .bar-point::after {
-    display: none;
+    transform: rotate(90);
+    width: 2px;
+    height: 24px;
+    left: 50%;
+  }
+  .bar-point::before {
+    top: -24px;
+  }
+  .bar-point::after {
+    bottom: -24px;
+    top: auto;
   }
 }
 @media screen and (max-width: 600px) {
