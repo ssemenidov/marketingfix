@@ -20,7 +20,7 @@
   &-close {
     position: absolute;
     right: 0;
-    top: -20px;
+    top: -35px;
   }
   &-content {
     position: relative;
@@ -67,6 +67,7 @@
     padding: 0.5em;
     box-sizing: border-box;
     width: 100%;
+    text-align: center;
   }
   &-submit {
     background: #fff;
@@ -75,6 +76,15 @@
     padding: 0.5em;
     width: 100%;
     border-radius: 10px;
+  }
+  &-deal {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    align-self: center;
+  }
+  &-sup-deal {
+    text-align: center;
   }
 }
 
@@ -107,5 +117,8 @@
     font-size: 20px;
     padding: 0.7em 0.5em;
     width: 80%;
+  }
+  .form-title {
+    font-size: 2.1rem;
   }
 }
