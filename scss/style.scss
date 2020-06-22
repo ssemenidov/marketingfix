@@ -6,6 +6,7 @@
 }
 body {
   font-family: Arial, sans-serif;
+  font-family: "Gilroy";
 }
 
 button {
@@ -65,7 +66,24 @@ html {
   display: none !important;
   transition: opacity 0.5s ease-in-out forwards;
 }
-
+@font-face {
+  font-family: "Gilroy";
+  src: url("../Gilroy-Bold.woff");
+  src: url("../Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../Gilroy-Bold.woff") format("woff"),
+    url("../Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../Gilroy-Regular.eot");
+  src: url("../Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../Gilroy-Regular.woff") format("woff"),
+    url("../Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 @import "header";
 @import "feature";
 
