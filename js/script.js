@@ -63,22 +63,27 @@ $(document).ready(function () {
 burger = document.querySelector(".burg");
 header = document.querySelector(".header-mob");
 navList = document.querySelectorAll(".header-mob .menu-item");
-burger.addEventListener("click", () => {
-  header.classList.toggle("header-mob--active");
-  burger.classList.toggle("burg--active");
-});
-for (navlink of navList) {
-  navlink.addEventListener("click", () => {
-    header.classList.remove("header-mob--active");
-    burger.classList.remove("burg--active");
-  });
-}
+
 callList = document.querySelectorAll(".contact-btn");
 servicecallList = document.querySelectorAll(".service-btn");
 ordercallList = document.querySelectorAll(".order-btn");
 form = document.querySelector(".form");
 formclose = document.querySelector(".form-close");
 formsubmit = document.querySelector(".form-submit");
+
+burger.addEventListener("click", () => {
+  header.classList.toggle("header-mob--active");
+  burger.classList.toggle("burg--active");
+  form.classList.remove("form--active");
+});
+for (navlink of navList) {
+  navlink.addEventListener("click", () => {
+    header.classList.remove("header-mob--active");
+    burger.classList.remove("burg--active");
+    form.classList.remove("form--active");
+  });
+}
+
 for (let call of callList) {
   call.addEventListener("click", () => {
     form.classList.toggle("form--active");

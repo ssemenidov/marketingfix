@@ -97,6 +97,7 @@
   .form-img {
     display: none;
   }
+
   .form-content {
     height: 100vh;
     align-items: center;
@@ -106,7 +107,8 @@
   }
   .form {
     background: linear-gradient(97.67deg, #37ecba 26.47%, #72afd3 106.99%);
-    height: 100vh;
+    height: 90vh;
+    margin-top: 100px;
   }
   .form-submit {
     padding: 0.7em 0.5em;
