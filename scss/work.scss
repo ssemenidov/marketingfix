@@ -173,17 +173,7 @@
     height: 18em;
   }
 }
-@media screen and (max-width: 600px) {
-  .work-text {
-    height: 20em;
-  }
-}
-@media screen and (max-width: 360px) {
-  .work-text {
-    margin-top: 200px;
-    height: 25em;
-  }
-}
+
 @media screen and (max-width: 768px) {
   .work {
     background-position: 40% 20%, left 20%, center;
@@ -207,7 +197,7 @@
   }
   .work-text {
     width: 90%;
-    margin-top: 250px;
+    margin-top: 220px;
   }
 
   .work-rocket {
@@ -238,5 +228,16 @@
 @media screen and (max-width: 425px) {
   .work {
     background-size: 40%, 70%, 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .work-text {
+    height: 20em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .work-text {
+    margin-top: 200px;
+    height: 25em;
   }
 }
