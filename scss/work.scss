@@ -193,14 +193,14 @@
   .bar-point::after {
     transform: rotate(90);
     width: 2px;
-    height: 24px;
+    height: 27px;
     left: 50%;
   }
   .bar-point::before {
-    top: -24px;
+    top: -27px;
   }
   .bar-point::after {
-    bottom: -24px;
+    bottom: -27px;
     top: auto;
   }
 }
