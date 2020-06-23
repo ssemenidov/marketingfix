@@ -67,8 +67,9 @@
     max-width: 300px;
     font-weight: bold;
     font-size: 1.25rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1em;
+    max-width: 400px;
   }
   &-btn {
     font-weight: bold;
@@ -77,9 +78,10 @@
     background: #2f80ed;
     border-radius: 10px;
     max-width: 600px;
-    width: 80%;
+    width: 50%;
     text-align: center;
     padding: 0.5em 1.5em;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 768px) {
@@ -97,5 +99,10 @@
   }
   .case-hidden-btn {
     padding: 0.7em 1.5em;
+    width: 80%;
+  }
+  .case-hidden-text {
+    width: 60%;
+    text-align: center;
   }
 }

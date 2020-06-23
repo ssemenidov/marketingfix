@@ -32,10 +32,12 @@
 
       border-radius: 10px;
       text-align: center;
-      border: 2px solid #37ecba;
+      box-shadow: 0 0 0 2pt #37ecba;
+      cursor: pointer;
     }
     &-item--active {
       background: linear-gradient(140.46deg, #37ecba 26.47%, #72afd3 106.99%);
+      box-shadow: 0 0 0 0pt #37ecba;
     }
   }
   &-item {

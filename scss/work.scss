@@ -57,6 +57,7 @@
     border: 2px solid #2df7e0;
     padding: 0.7em 1.5em;
     margin: 0 1em;
+    cursor: pointer;
   }
   &-btns {
     display: flex;
@@ -70,6 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   &-rocket {
@@ -113,18 +115,25 @@
     font-weight: bold;
     font-size: 25px;
     border-radius: 100%;
-    padding: 0.5em 0.8em;
+    width: 50px;
+    height: 50px;
     border: 2px solid #fff;
     transition: all 0.5s;
+    cursor: pointer;
   }
   &-point-btn--active {
     font-weight: bold;
     font-size: 25px;
     background: #13547a;
     border-radius: 100%;
-    padding: 0.5em 0.8em;
     border: none;
     border: 2px solid #13547a;
+  }
+  &-point-btn--active::after {
+    content: url(../img/point-ellipse.svg);
+    position: absolute;
+    top: -10px;
+    left: -10px;
   }
   &-point-text {
     position: absolute;
