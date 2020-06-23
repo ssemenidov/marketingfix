@@ -1,4 +1,5 @@
 .work {
+  position: relative;
   padding: 2.5em 0;
   background-image: url(../img/work1.png), url(../img/work1-bg.svg),
     linear-gradient(116.24deg, #2df7c6 4.33%, #13547a 92.47%);
@@ -6,6 +7,11 @@
   background-repeat: no-repeat;
   background-size: 18%, 30%, auto;
   color: #fff;
+  &-head {
+    width: 100%;
+    bottom: 99.9%;
+    position: absolute;
+  }
   &-wrap {
     display: flex;
     flex-direction: column;
@@ -160,6 +166,8 @@
   .work {
     background-position: 40% 20%, left 20%, center;
     background-size: 27%, 50%, 100%;
+    background-image: url(../img/work1.png), url(../img/work1-bg.svg),
+      linear-gradient(98.02deg, #2df7c6 4.33%, #13547a 92.47%);
   }
   .work-wrap {
     flex-direction: row;

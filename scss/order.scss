@@ -2,6 +2,11 @@
   position: relative;
   z-index: 1;
   padding: 4em 0;
+  &-head {
+    width: 100%;
+    bottom: 99.9%;
+    position: absolute;
+  }
   &-title {
     max-width: 950px;
     font-weight: 800;
@@ -94,5 +99,8 @@
   }
   .order-green {
     background-size: 50%, auto;
+    // background: linear-gradient(98.62deg, #2DF7C6 4.33%, #13547A 92.47%);
+    background-image: url(../img/order-green-img.png),
+      linear-gradient(98.62deg, #2df7c6 4.33%, #13547a 92.47%);
   }
 }

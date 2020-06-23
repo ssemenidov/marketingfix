@@ -21,6 +21,7 @@
     justify-content: space-between;
     margin-bottom: 50px;
     &-item {
+      transition: all 0.5s;
       max-width: 300px;
       padding: 0.5em 0;
       width: 32%;

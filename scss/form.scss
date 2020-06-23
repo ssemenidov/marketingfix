@@ -19,7 +19,7 @@
   }
   &-close {
     position: absolute;
-    right: 0;
+    right: -35px;
     top: -35px;
   }
   &-content {
@@ -83,9 +83,11 @@
     border-bottom: 1px solid #fff;
     text-align: center;
     align-self: center;
+    font-size: 15px;
   }
   &-sup-deal {
     text-align: center;
+    font-size: 15px;
   }
 }
 
@@ -126,5 +128,9 @@
   .form--active-menu {
     height: 90vh;
     margin-top: 100px;
+  }
+  .form-deal,
+  .form-sup-deal {
+    font-size: 12px;
   }
 }
