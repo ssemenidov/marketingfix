@@ -70,7 +70,7 @@ ordercallList = document.querySelectorAll(".order-btn");
 form = document.querySelector(".form");
 formclose = document.querySelector(".form-close");
 formsubmit = document.querySelector(".form-submit");
-
+portfbtn = document.querySelector(".case-hidden-btn");
 burger.addEventListener("click", () => {
   header.classList.toggle("header-mob--active");
   burger.classList.toggle("burg--active");
@@ -97,7 +97,9 @@ for (let ordercall of ordercallList) {
     form.classList.add("form--active");
   });
 }
-
+portfbtn.addEventListener("click", () => {
+  form.classList.add("form--active");
+});
 for (let servicecall of servicecallList) {
   servicecall.addEventListener("click", () => {
     form.classList.add("form--active");
@@ -115,7 +117,9 @@ head = document.querySelector(".header-top");
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 10) {
     head.classList.add("header-top-fix");
+    burger.classList.add("burg-green");
   } else {
     head.classList.remove("header-top-fix");
+    burger.classList.remove("burg-green");
   }
 });

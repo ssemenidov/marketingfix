@@ -20,8 +20,8 @@
   }
   &-close {
     position: absolute;
-    right: -25px;
-    top: -35px;
+    right: -16px;
+    top: -38px;
   }
   &-content {
     position: relative;
@@ -129,5 +129,10 @@
   .form-deal,
   .form-sup-deal {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .form {
+    padding-top: 155px;
   }
 }

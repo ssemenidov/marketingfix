@@ -37,6 +37,7 @@
     opacity: 0;
   }
 }
+
 .burg {
   pointer-events: all !important;
   position: fixed;
@@ -58,11 +59,23 @@
     padding-bottom: 5px;
   }
 }
+.burg-w {
+  display: none;
+}
 .burg--active {
   content: url(../img/close-all.svg);
   opacity: 1;
   background: linear-gradient(97.67deg, #37ecba 26.47%, #72afd3 106.99%);
-  position: fixed;
+}
+.burg-green {
+  background: linear-gradient(97.67deg, #37ecba 26.47%, #72afd3 106.99%);
+  color: #fff;
+  .burg-g {
+    display: none;
+  }
+  .burg-w {
+    display: block;
+  }
 }
 .mob-logo {
   width: 200px;
