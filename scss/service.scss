@@ -145,4 +145,21 @@
   .service-theme-title {
     padding: 1em 0.5em;
   }
+  .service-theme-title::before {
+    display: block;
+    width: 122%;
+    top: -17%;
+    left: -44px;
+  }
+  .service-theme-title {
+    background: none;
+    margin: 1em 0;
+  }
+}
+@media screen and (max-width: 325px) {
+  .service-theme-title::before {
+    top: -8%;
+    left: -50px;
+    width: 130%;
+  }
 }
