@@ -23,7 +23,11 @@
       object-fit: contain;
     }
   }
+  &-item-link {
+    width: 100%;
+  }
   &-item-hidden {
+    pointer-events: none;
     position: absolute;
     opacity: 0;
     background: #3e7eff;
@@ -43,7 +47,7 @@
       text-transform: uppercase;
     }
   }
-  &-item-hidden:hover {
+  &-item:hover .case-item-hidden {
     opacity: 1;
   }
 }
@@ -72,6 +76,7 @@
     max-width: 400px;
   }
   &-btn {
+    z-index: 2;
     font-weight: bold;
     font-size: 1.5rem;
     color: #fff;
