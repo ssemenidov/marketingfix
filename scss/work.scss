@@ -1,6 +1,6 @@
 .work {
   position: relative;
-  padding: 2.5em 0;
+  padding: 3.5em 0;
   background-image: url(../img/work1.png), url(../img/work1-bg.svg),
     linear-gradient(116.24deg, #2df7c6 4.33%, #13547a 92.47%);
   background-position: 20% 80%, left 80%, center;
@@ -9,7 +9,7 @@
   color: #fff;
   &-head {
     width: 100%;
-    bottom: 99.9%;
+    top: -1px;
     position: absolute;
   }
   &-wrap {
