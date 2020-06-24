@@ -79,13 +79,37 @@
   // margin-top: 2.6em;
   &-title {
     //margin: 2.5em 0;
-    background: linear-gradient(140.46deg, #37ecba 26.47%, #72afd3 106.99%);
+    //background: linear-gradient(140.46deg, #37ecba 26.47%, #72afd3 106.99%);
     padding: 1em 1.5em;
     border-radius: 10px;
     color: #fff;
+    margin: 2.5em 0;
+    position: relative;
+  }
+  &-title::before {
+    content: "";
+    background: url(../img/service-theme.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    top: -145px;
+    left: -285px;
+    z-index: -10;
+    height: 465%;
+    max-width: 1150px;
+    width: 160%;
+    background-size: contain;
   }
   &-img {
     position: absolute;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .service-title::before {
+    display: none;
+  }
+  .service-title {
+    background: linear-gradient(140.46deg, #37ecba 26.47%, #72afd3 106.99%);
   }
 }
 @media screen and (max-width: 1024px) {
