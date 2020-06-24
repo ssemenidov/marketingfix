@@ -110,3 +110,12 @@ formclose.addEventListener("click", () => {
 formsubmit.addEventListener("click", () => {
   form.classList.toggle("form--active");
 });
+
+head = document.querySelector(".header-top");
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 10) {
+    head.classList.add("header-top-fix");
+  } else {
+    head.classList.remove("header-top-fix");
+  }
+});

@@ -9,10 +9,34 @@
   font-size: 1.25rem;
   color: #ffffff;
   height: 800px;
-  &-top {
-    padding-top: 54px;
+  &-top-content {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1440px;
+  }
+  &-top {
+    padding-top: 54px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &-top-fix {
+    z-index: 100;
+    padding-top: 0;
+    height: 95px;
+    position: fixed;
+    color: #37ecba;
+    background: #fff;
+  }
+  &-top-fix:after {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(179.01deg, #37ecba 26.47%, #72afd3 106.99%);
+    position: absolute;
+    bottom: 0;
   }
   &-content {
     padding-top: 150px;
