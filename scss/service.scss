@@ -105,10 +105,10 @@
   }
 }
 @media screen and (max-width: 1150px) {
-  .service-title::before {
+  .service-theme-title::before {
     display: none;
   }
-  .service-title {
+  .service-theme-title {
     background: linear-gradient(140.46deg, #37ecba 26.47%, #72afd3 106.99%);
   }
 }
