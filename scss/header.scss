@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
     max-width: 1440px;
   }
   &-top {
@@ -23,12 +23,15 @@
     align-items: center;
   }
   &-top-fix {
-    z-index: 100;
+    z-index: 8;
     padding-top: 0;
     height: 95px;
     position: fixed;
     color: #37ecba;
     background: #fff;
+  }
+  &-top-fix &-top-content::before {
+    content: url(../img/logo-green.svg);
   }
   &-top-fix:after {
     content: "";
@@ -36,7 +39,7 @@
     width: 100%;
     background: linear-gradient(179.01deg, #37ecba 26.47%, #72afd3 106.99%);
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
   }
   &-content {
     padding-top: 150px;
@@ -123,7 +126,9 @@
   .header-text {
     margin-top: 175px;
   }
-  .header-top {
+  .header-top .header-menu,
+  .header-top .contact,
+  .header-top-fix:after {
     display: none;
   }
   .header-menu {
