@@ -4,8 +4,9 @@
   padding: 4em 0;
   &-head {
     width: 100%;
-    top: 0;
+    top: -1px;
     position: absolute;
+    box-shadow: -1px -25px 20px #f5f5f5;
   }
   // &-head-hide {
   //   width: 100%;
@@ -108,5 +109,13 @@
     // background: linear-gradient(98.62deg, #2DF7C6 4.33%, #13547A 92.47%);
     background-image: url(../img/order-green-img.png),
       linear-gradient(98.62deg, #2df7c6 4.33%, #13547a 92.47%);
+  }
+  .order-head {
+    box-shadow: -3px -17px 15px #f5f5f5;
+  }
+}
+@media screen and (max-width: 450px) {
+  .order-head {
+    box-shadow: -3px -10px 8px #f5f5f5;
   }
 }

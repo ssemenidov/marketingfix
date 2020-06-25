@@ -21,6 +21,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    transition: padding 0.5s;
   }
   &-top-fix {
     z-index: 8;
@@ -32,6 +33,7 @@
   }
   &-top-fix &-top-content::before {
     content: url(../img/logo-green.svg);
+    margin-left: 5px;
   }
   &-top-fix:after {
     content: "";
@@ -85,7 +87,7 @@
   justify-content: space-around;
   align-items: center;
   max-width: 490px;
-  width: 55%;
+  width: 45%;
   flex-wrap: wrap;
   &-num {
     letter-spacing: 0.06em;

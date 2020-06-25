@@ -53,7 +53,7 @@
 }
 .case-hidden {
   background: url(../img/case-hide.png);
-  height: 15rem;
+  height: 12rem;
   color: #13547a;
   display: flex;
   align-items: center;
@@ -65,6 +65,7 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 2em;
   }
 
   &-text {
