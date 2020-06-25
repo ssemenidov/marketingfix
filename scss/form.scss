@@ -14,10 +14,6 @@
   align-items: center;
   justify-content: center;
   padding-top: 90px;
-  &-img {
-    position: absolute;
-    z-index: 2;
-  }
   &-close {
     position: absolute;
     right: -16px;
@@ -44,6 +40,7 @@
   &-img {
     position: absolute;
     z-index: -1;
+    top: -85px;
     left: -80px;
   }
   &-title {
