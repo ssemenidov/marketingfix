@@ -115,7 +115,7 @@ formsubmit.addEventListener("click", () => {
 
 head = document.querySelector(".header-top");
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= 10) {
+  if (window.scrollY >= 150) {
     head.classList.add("header-top-fix");
     burger.classList.add("burg-green");
   } else {

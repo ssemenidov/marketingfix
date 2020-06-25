@@ -63,7 +63,10 @@ html {
 }
 .hidden {
   opacity: 0 !important;
-  display: none !important;
+  margin: 0 !important;
+  visibility: hidden;
+  pointer-events: none;
+  height: 0 !important;
   transition: opacity 0.5s ease-in-out forwards;
 }
 

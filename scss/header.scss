@@ -30,10 +30,15 @@
     position: fixed;
     color: #37ecba;
     background: #fff;
+    animation: header 0.5s ease-in-out forwards;
   }
-  &-top-fix &-top-content::before {
+  &-top-content::before {
     content: url(../img/logo-green.svg);
     margin-left: 5px;
+    display: none;
+  }
+  &-top-fix &-top-content::before {
+    display: block;
   }
   &-top-fix:after {
     content: "";
@@ -161,5 +166,13 @@
   }
   .header-title {
     font-size: 1.2rem;
+  }
+}
+@keyframes header {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
