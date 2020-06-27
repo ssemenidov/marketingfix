@@ -68,16 +68,11 @@
   background-repeat: no-repeat;
 
   padding-bottom: 10em !important;
-  &-wrap {
-    background: #fff;
-    width: max-content;
-    // padding: 0.5em 0;
-    border-radius: 10px;
-  }
+
   &-btn {
-    background: linier-gradient(140.46deg, #37ecba 26.47%, #72afd3 106.99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: #fff;
+    border-radius: 10px;
+    color: #50d2c5;
   }
 }
 
