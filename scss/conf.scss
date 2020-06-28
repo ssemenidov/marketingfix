@@ -30,11 +30,13 @@
     padding-left: 1.5em;
     box-sizing: border-box;
     font-size: 1.25rem;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   &-text {
+    color: #13547a;
     padding: 1.5em;
     p {
       padding: 0.2em 0;
