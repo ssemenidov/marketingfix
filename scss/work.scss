@@ -231,17 +231,17 @@
     top: auto;
   }
 }
-
+@media screen and (max-width: 600px) {
+  .work-text {
+    height: 22em;
+  }
+}
 @media screen and (max-width: 425px) {
   .work {
     background-size: 40%, 70%, 100%;
   }
 }
-@media screen and (max-width: 600px) {
-  .work-text {
-    height: 20em;
-  }
-}
+
 @media screen and (max-width: 360px) {
   .work-text {
     margin-top: 200px;
