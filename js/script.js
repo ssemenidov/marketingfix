@@ -123,3 +123,15 @@ window.addEventListener("scroll", () => {
     burger.classList.remove("burg-green");
   }
 });
+
+conf = document.querySelector(".conf");
+confclose = document.querySelector(".conf-close");
+confopen = document.querySelector(".footer-conf");
+confopen.addEventListener("click", () => {
+  console.log("open");
+
+  conf.classList.add("conf--active");
+});
+confclose.addEventListener("click", () => {
+  conf.classList.remove("conf--active");
+});

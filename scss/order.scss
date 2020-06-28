@@ -1,7 +1,7 @@
 .order {
   position: relative;
   z-index: 1;
-  padding: 4em 0;
+  padding: 10em 0;
   &-head {
     width: 100%;
     top: -1px;
@@ -78,7 +78,7 @@
 
 @media screen and (max-width: 768px) {
   .order {
-    padding: 2.5em 0;
+    padding: 4.5em 0;
   }
   .order-text {
     text-align: center;

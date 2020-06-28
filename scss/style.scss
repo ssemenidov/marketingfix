@@ -10,3 +10,55 @@
 @import "work";
 @import "header-mob";
 @import "form";
+.conf {
+  pointer-events: none;
+  position: fixed;
+  opacity: 0;
+  z-index: 11;
+  transition: all 0.5s;
+  background: rgba($color: #000000, $alpha: 0.5);
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-content {
+    overflow: auto;
+    max-height: 100vh;
+    max-width: 1024px;
+    width: 90%;
+    background: #fff;
+
+    //color: #50d2c5;
+    border-radius: 10px;
+  }
+  &-head {
+    color: #fff;
+    background: #50d2c5;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-text {
+    padding: 1.5em;
+    p {
+      padding: 0.2em 0;
+    }
+  }
+  &-close {
+    padding: 0.1em;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+.conf--active {
+  opacity: 1;
+  pointer-events: all;
+}
