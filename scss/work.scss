@@ -49,7 +49,7 @@
     border-left: 1px solid #2df7e0;
     margin-bottom: 1.5em;
     transition: opacity 0.5s ease-in-out;
-    height: 11em;
+    height: 14em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +166,7 @@
 // }
 @media screen and (max-width: 1280px) {
   .work-text {
-    height: 15em;
+    height: 18em;
   }
   .work {
     padding-top: 6.5em;
@@ -174,7 +174,11 @@
 }
 @media screen and (max-width: 900px) {
   .work-text {
-    height: 18em;
+    height: 20em;
+  }
+  .bar-point-text {
+    top: 4em;
+    font-size: 0.9rem;
   }
 }
 
