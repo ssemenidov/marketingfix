@@ -16,7 +16,7 @@
   padding-top: 90px;
   &-close {
     position: absolute;
-    right: -16px;
+    right: -48px;
     top: -38px;
   }
   &-content {
@@ -110,6 +110,9 @@
   .form {
     background: linear-gradient(97.67deg, #37ecba 26.47%, #72afd3 106.99%);
     height: 100vh;
+  }
+  .form-close {
+    right: -18px;
   }
   .form-submit {
     padding: 0.7em 0.5em;
