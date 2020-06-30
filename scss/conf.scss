@@ -38,21 +38,6 @@
     background-color: #13547a;
   }
 
-  // &-content::-webkit-scrollbar {
-  //   width: 0.5rem;
-  // }
-
-  // /* Track */
-  // &-content::-webkit-scrollbar-track {
-  //   background: #f1f1f1;
-  //   border-radius: 2px;
-  // }
-
-  // /* Handle */
-  // &-content::-webkit-scrollbar-thumb {
-  //   background: #13547a;
-  //   border-radius: 2px;
-  // }
   &-head {
     color: #fff;
     background: #50d2c5;
@@ -74,11 +59,16 @@
       padding: 0.2em 0;
     }
   }
+  &-title {
+    margin-left: auto;
+    margin-right: 0.5em;
+  }
   &-close {
     padding: 0.1em;
     width: 30px;
     height: 30px;
     cursor: pointer;
+    margin-left: auto;
   }
 }
 .conf--active {
