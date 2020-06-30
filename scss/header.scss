@@ -177,3 +177,8 @@
     transform: translateY(0);
   }
 }
+@media screen and (max-height: 450px) {
+  .header-top-fix {
+    display: none;
+  }
+}
