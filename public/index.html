@@ -40,8 +40,18 @@
           Оставьте заявку и мы свяжемся с Вами в ближайшее время!
         </div>
         <div class="form-sub-input">Телефон:</div>
-        <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" />
-        <input type="submit" value="Отправить Заявку" class="form-submit" />
+        <form class="form-form">
+          <input
+            type="tel"
+            class="form-input"
+            placeholder="___________"
+            name="tel"
+            maxlength="11"
+            pattern="[0-9]{11}"
+            required
+          />
+          <input type="submit" value="Отправить Заявку" class="form-submit" />
+        </form>
         <div class="form-sup-deal">
           Нажимая на кнопку, вы даете свое согласие на обработку персональных
           данных

@@ -109,9 +109,9 @@ formclose.addEventListener("click", () => {
   form.classList.remove("form--active");
 });
 
-formsubmit.addEventListener("click", () => {
-  form.classList.toggle("form--active");
-});
+// formsubmit.addEventListener("click", () => {
+//   form.classList.toggle("form--active");
+// });
 
 head = document.querySelector(".header-top");
 window.addEventListener("scroll", () => {
@@ -134,4 +134,19 @@ confopen.addEventListener("click", () => {
 });
 confclose.addEventListener("click", () => {
   conf.classList.remove("conf--active");
+});
+
+const email = document.querySelector(".form-form");
+const input = document.querySelector(".form-input");
+email.addEventListener("submit", () => {
+  const data = {
+    tel: input.value,
+  };
+  fetch("/send", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
 });

@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
     "jquery": "^3.5.1",
+    "nodemailer": "^6.4.10",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
   },
