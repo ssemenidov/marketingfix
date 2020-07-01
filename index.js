@@ -3,9 +3,7 @@ const fs = require("fs");
 const nodemailer = require("nodemailer");
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log("listen 3000");
-});
+app.listen(PORT, () => {});
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("./public"));
@@ -22,17 +20,12 @@ async function send(data) {
       pass: "dfc1e39d54600c",
     },
   });
-  console.log("1");
-
   let info = await transporter.sendMail({
     from: '"Serge" <smtp.mailtrap.io>',
     to: "23sergey03@gmail.com",
     subject: "Телефоный номер с Сайта",
     text: data.tel,
   });
-  console.log("2");
-  console.log("Message sent: %s", info.messageId);
-  console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 }
 
 // main().catch(console.error);
