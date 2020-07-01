@@ -4,4 +4,4 @@ const app = express();
 app.listen(3000, () => {
   console.log("listen 3000");
 });
-app.use(express.static("./"));
+app.use(express.static("./public"));
