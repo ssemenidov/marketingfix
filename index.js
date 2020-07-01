@@ -13,15 +13,15 @@ app.post("/send", (req, res) => {
 });
 async function send(data) {
   let transporter = nodemailer.createTransport({
-    host: "smtp.mailtrap.io",
-    port: 2525,
+    host: "smtp.mail.ru",
+    port: 465,
     auth: {
-      user: "b892ad9e900e33",
-      pass: "dfc1e39d54600c",
+      user: "ivanov.aleskey@bk.ru",
+      pass: "FuY9#D6f&",
     },
   });
   let info = await transporter.sendMail({
-    from: '"Serge" <smtp.mailtrap.io>',
+    from: '"Machine" <ivanov.aleskey@bk.ru>',
     to: "23sergey03@gmail.com",
     subject: "Телефоный номер с Сайта",
     text: data.tel,
