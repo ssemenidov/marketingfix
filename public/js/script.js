@@ -59,7 +59,9 @@ $(document).ready(function () {
     prevArrow: ".target-prev",
   });
 });
-
+var phoneMask = IMask(document.querySelector(".form-input"), {
+  mask: "+{7} (000) 000-00-00",
+});
 burger = document.querySelector(".burg");
 header = document.querySelector(".header-mob");
 navList = document.querySelectorAll(".header-mob .menu-item");
