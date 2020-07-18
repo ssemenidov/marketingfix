@@ -22,7 +22,7 @@ async function send(data) {
   });
   let info = await transporter.sendMail({
     from: '"Machine" <ivanov.aleskey@bk.ru>',
-    to: "23sergey03@gmail.com",
+    to: "zippy-studio@mail.ru",
     subject: "Активность на сайте",
     text: "Номер телефона: " + data.tel,
   });
